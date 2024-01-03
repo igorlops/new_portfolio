@@ -1,0 +1,40 @@
+footer{
+    background-color: rgb(129, 62, 31);
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.creditos-rodape{
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu-rodape{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-rodape ul {
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.menu-rodape ul li {
+    list-style-type: none;
+}
+
+.menu-rodape ul li a{
+    display: flex;
+    text-decoration: none;
+    color: white;
+}

@@ -1,0 +1,610 @@
+{
+    "experiencias":[
+        {
+            "title":"Estagiário de desenvolvimento de software",
+            "empresa":"SCIO Tech",
+            "data":"01/12/2022 - 29/05/2023",
+            "atividades":[
+                "Desenvolvimento e manutenção de aplicações web",
+                "Criação de funcionalidades e resolução de problemas relacionados a bancos de dados", 
+                "Colaboração com a equipe de desenvolvimento para implementar soluções eficientes e escaláveis"
+            ],
+            "descricao":"Desenvolvimento e manutenção de softwares Fullstack Java",
+            "tecnologias":[1,4,5,6,10,11,12,18,24,25,26,27,28]
+        },
+        {
+            "title":"Desenvolvedor Web Freelancer",
+            "empresa":"Freelence",
+            "data":"01/01/2023 - Atualmente",
+            "atividades":[
+                "Desenvolvimento e personalização de sites usando PHP, Wordpress, JavaScript, HTML e CSS.",
+                "Implementação de funcionalidades adicionais, como plugins e temas personalizados",                 
+                "Otimização de desempenho e resolução de problemas de compatibilidade de navegadores.",
+                "Desenvolvimento de sistemas personalizados para clientes a fim de otimizar o tempo e organizar os processos internos sob demanda"
+            ],
+            "descricao":"Desenvolvimento de sites, Landing Pages e Sistemas",
+            "tecnologias":[4,5,6,8,13,14,15,17]
+        },
+        {
+            "title":"Desenvolvedor de Sistemas Jr",
+            "empresa":"Solab",
+            "data":"26/06/2023 - Atualmente",
+            "atividades":[
+                "Desenvolvimento de aplicações de Automação Empresarial",
+                "Criação de interfaces eficientes para melhor experiência do usuário", 
+                "Integração de lógica de negócio",
+                "Integração de API's externas"
+            ],
+            "descricao":"Desenvolvimento de aplicações para usuários internos da empresa, visando sempre satisfazer o usuário final com uma aplicação intuitiva e de interface agradável.",
+            "tecnologias":[4,5,6,13,14,16,17,19]
+        }
+    ],
+    "projetos":[
+        {
+            "image":"",
+            "type":1,
+            "title":"Consumindo API DB Movie",
+            "descricao":"Consumo da API DB Movie, onde há várias informações e detalhes de filmes. É um ótimo exercício para Front End, utilizei nesse projeto React e os Hooks que facilitaram muito o trabalho com ênfase no useParam para ver os detalhes de cada filme",
+            "tecnologias":[2,3,5,8],
+            "link_repositorio":"https://github.com/igorlops/react-dbmovie",
+            "link_online":"https://react-dbmovie.vercel.app/"
+        },
+        {
+            "image":"",
+            "type":1,
+            "title":"TODO List React + Typescript",
+            "descricao":"Aplicação de CRUD de uma lista de tarefas para estudo de Typescript e React",
+            "tecnologias":[2,3,5,8,21],
+            "link_repositorio":"https://github.com/igorlops/to-list-react",
+            "link_online":"https://to-list-react-psi.vercel.app/"
+        },
+        {
+            "image":"",
+            "type":1,
+            "title":"Miniblog com React",
+            "descricao":"Projeto de estudo com vários conceitos interessantes, como controle de acesso as rotas, publicação de post, pesquisas de posts. Utilizei React e Firebase.",
+            "tecnologias":[2,3,5,8,32],
+            "link_repositorio":"https://github.com/igorlops/miniblog-react",
+            "link_online":"https://miniblog-react-nu.vercel.app/"
+        },
+        {
+            "image":"",
+            "type":1,
+            "title":"AluraTube",
+            "descricao":"Repositório alternativo de videos do Youtube utilizando React. Utilizei o Context API para criar os temas Dark Mode e Light Mode, e fiz a conexão com o Supabase para cadastros futuros (que não está completo) de novos vídeos e tudo mais.",
+            "tecnologias":[2,3,5,8],
+            "link_repositorio":"https://github.com/igorlops/aluraTube",
+            "link_online":"https://alura-tube-igorlops.vercel.app/"
+        },
+        {
+            "image":"",
+            "type":1,
+            "title":"Secret Word",
+            "descricao":"Jogo para adivinhar palavras criadas previamente. É dado uma dica no começo a cada rodada, o objetivo é acertar o máximo de palavras. Se errar 3 vezes o jogo acaba.",
+            "tecnologias":[2,3,5,8],
+            "link_repositorio":"https://github.com/igorlops/secret-word",
+            "link_online":"https://secret-word-1mrk.vercel.app/"
+        },
+        {
+            "image":"",
+            "type":1,
+            "title":"Número secreto",
+            "descricao":"Jogo utilizando a API Speech Recognition para reconhecimento da voz. O intuito do jogo é acertar qual o número escolhido aleatoriamente no Javascript de 0 a 100.",
+            "tecnologias":[2,3,5],
+            "link_repositorio":"https://github.com/igorlops/numero-secreto",
+            "link_online":"https://numero-secreto-igorlops.vercel.app/"
+        },
+        {
+            "image":"",
+            "type":1,
+            "title":"Projeto ReactGram",
+            "descricao":"Projeto de um clone do Instagram Fullstack em Javascript. Criação da API com Node e Express e Mongo DB para banco de dados. No Frontend usei React e Redux.",
+            "tecnologias":[2,3,5,8,20,22],
+            "link_repositorio":"https://github.com/igorlops/reactgram/",
+            "link_online":""
+        },
+        {
+            "image":"",
+            "type":1,
+            "title":"API DS List",
+            "descricao":"API de lista de jogos criado com Spring Boot, H2 Database e JPA. O diferencial dessa API além de CRUD dos jogos é conseguir fazer uma ordenação entre os jogos.",
+            "tecnologias":[10,11,18],
+            "link_repositorio":"https://github.com/igorlops/dslist",
+            "link_online":""
+        },
+        {
+            "image":"",
+            "type":1,
+            "title":"API Cadastro de Médicos e Pacientes",
+            "descricao":"API criada para cadastro de Médicos e Pacientes, onde o paciente pode marcar consultas e visualizar horários disponíveis de cada médico. Api criada com Spring Boot e JPA, com banco de dados MySQL",
+            "tecnologias":[10,11,17],
+            "link_repositorio":"https://github.com/igorlops/Api-Med-Voll",
+            "link_online":""
+        },
+        {
+            "image":"",
+            "type":1,
+            "title":"Cloud-Parking",
+            "descricao":"API de estacionamento, com controle e tempo limitado para estar nas vagas. Criado com Spring Boot e PostgreSQL",
+            "tecnologias":[10,11,18],
+            "link_repositorio":"https://github.com/igorlops/cloud-parking",
+            "link_online":""
+        },
+        {
+            "image":"",
+            "type":1,
+            "title":"API Sistema de controle de pagamentos",
+            "descricao":"API de controle de pagamentos, com React e Spring Boot, consumindo serviços da Twilio para envio de mensagens com cobranças.",
+            "tecnologias":[5,8,10,11,17],
+            "link_repositorio":"https://github.com/igorlops/spring-react-devsuperior",
+            "link_online":""
+        },
+        {
+            "image":"",
+            "type":1,
+            "title":"API de estudo com Spring Framework",
+            "descricao":"API construída com Spring Boot para cadastro de CEP.",
+            "tecnologias":[10,11],
+            "link_repositorio":"https://github.com/igorlops/projeto-java-springFramework",
+            "link_online":""
+        },
+        {
+            "image":"",
+            "type":2,
+            "title":"GOBCE",
+            "descricao":"Site da Maçonaria do Ceará, com blog de últimas notícias",
+            "tecnologias":[2,3,5,13,15],
+            "link_repositorio":"https://gobce.org.br/",
+            "link_online":""
+        },
+        {
+            "image":"",
+            "type":2,
+            "title":"Prolub",
+            "descricao":"Site de lubrificantes automotivos estilo catálogo de produtos",
+            "tecnologias":[2,3,5,13,15],
+            "link_repositorio":"https://prolub.ind.br/",
+            "link_online":""
+        },
+        {
+            "image":"",
+            "type":2,
+            "title":"FDS Construções e Equipamentos",
+            "descricao":"Site da empresa FDS construções e equipamentos. Empresa responsável por construir academia ao ar livre",
+            "tecnologias":[2,3,5,13,15],
+            "link_repositorio":"https://fdsengenharia.com/",
+            "link_online":""
+        },
+        {
+            "image":"",
+            "type":2,
+            "title":"ProRequinte",
+            "descricao":"Site de empresa de móveis planejados referência em sua área",
+            "tecnologias":[2,3,5,13,15],
+            "link_repositorio":"https://prorequinte.com/",
+            "link_online":""
+        },
+        {
+            "image":"",
+            "type":2,
+            "title":"Landing Page parceiro MOB",
+            "descricao":"Landing Page criada para parceiro MOB Telecom.",
+            "tecnologias":[2,3,5,13,15],
+            "link_repositorio":"https://superfibranet.com.br/",
+            "link_online":""
+        },
+        {
+            "image":"",
+            "type":3,
+            "title":"Sistema administrativo",
+            "descricao":"Desenvolvimento de sistema administrativo para uma pequena empresa sob demanda",
+            "tecnologias":[13,14,17,23],
+            "link_repositorio":"",
+            "link_online":""
+        },
+        {
+            "image":"",
+            "type":3,
+            "title":"Cardápio online",
+            "descricao":"Cardápio online para pequenos negócios sob demanda",
+            "tecnologias":[13,14,17,23],
+            "link_repositorio":"",
+            "link_online":""
+        },
+        {
+            "image":"",
+            "type":4,
+            "title":"Auxiliar de fechamento de caixa",
+            "descricao":"A aplicação é acionada assim que o fechamento de caixa ocorre (gatilho na criação de novo registro de fechamento), criando uma pendência no aplicativo com o fechamento esperando arquivos para a conferência de financeiro",
+            "tecnologias":[2,3,5,6,19],
+            "link_repositorio":"",
+            "link_online":""
+        },
+        {
+            "image":"",
+            "type":4,
+            "title":"API Integração",
+            "descricao":"API de Integração do E-Commerce da empresa com API da Linx, utlizando Python",
+            "tecnologias":[16,19],
+            "link_repositorio":"",
+            "link_online":""
+        }
+    ],
+    "cursos":[
+        {
+            "titulo":"Formação Java com Orientação a Objetos",
+            "instituicao":"Alura",
+            "tecnologias":[10],
+            "horas":121,
+            "status":1,
+            "link":"https://cursos.alura.com.br/degree/certificate/a01add87-b88b-4f43-9090-e34e0d740933?lang=pt_BR"
+        },
+        {
+            "titulo":"Java Web: Crie aplicações com Servlets e MVC",
+            "instituicao":"Alura",
+            "tecnologias":[10,12,24,25],
+            "horas":25,
+            "status":1,
+            "link":"https://cursos.alura.com.br/user/igorlops/degree-java-web-475746/certificate"
+        },
+        {
+            "titulo":"Integre Aplicações Java Com Banco De Dados",
+            "instituicao":"Alura",
+            "tecnologias":[10,28,26,27],
+            "horas":30,
+            "status":1,
+            "link":"https://cursos.alura.com.br/degree/certificate/97a59f2b-3e2f-4867-88d4-a6f78cc938dc?lang=pt_BR"
+        },
+        {
+            "titulo":"Java E Spring Boot",
+            "instituicao":"Alura",
+            "tecnologias":[10,11,12,17,26,27],
+            "horas":34,
+            "status":1,
+            "link":"https://cursos.alura.com.br/degree/certificate/18dea063-33fc-4cec-85ad-dc51697daaaf?lang=pt_BR"
+        },
+        {
+            "titulo":"PostgreSQL",
+            "instituicao":"Alura",
+            "tecnologias":[18],
+            "horas":8,
+            "status":1,
+            "link":"https://cursos.alura.com.br/degree/certificate/18dea063-33fc-4cec-85ad-dc51697daaaf?lang=pt_BR"
+        },
+        {
+            "titulo":"Formação Wordpress",
+            "instituicao":"Alura",
+            "tecnologias":[13,15,17],
+            "horas":58,
+            "status":1,
+            "link":"https://cursos.alura.com.br/degree/certificate/0d00d17a-f231-4a85-90e4-7979061a2f39?lang=pt_BR"
+        },
+        {
+            "titulo":"Python Essencial",
+            "instituicao":"Geek University (Udemy)",
+            "tecnologias":[16],
+            "horas":63.5,
+            "status":1,
+            "link":"https://www.udemy.com/certificate/UC-5668c025-a5e3-4afe-ba00-8c77cd694ddf/"
+        },
+        {
+            "titulo":"React do Zero a Maestria",
+            "instituicao":"Hora de Codar (Udemy)",
+            "tecnologias":[2,3,5,8,9,22,29],
+            "horas":30.5,
+            "status":1,
+            "link":"https://www.udemy.com/certificate/UC-bbe5afa8-f3cc-441b-835d-897ec5ddaa6b/"
+        },
+        {
+            "titulo":"Québec Java Digital",
+            "instituicao":"Digital Innovation One",
+            "tecnologias":[10,11,18,26,27],
+            "horas":93,
+            "status":1,
+            "link":"https://www.dio.me/certificate/BBEAD500"
+        },
+        {
+            "titulo":"Database Experience",
+            "instituicao":"Digital Innovation One",
+            "tecnologias":[17,18,19],
+            "horas":54,
+            "status":1,
+            "link":"https://www.dio.me/certificate/3BDC3611"
+        },
+        {
+            "titulo":"Linux Experience",
+            "instituicao":"Digital Innovation One",
+            "tecnologias":[30],
+            "horas":42,
+            "status":1,
+            "link":"https://www.dio.me/certificate/B28B35C3"
+        },
+        {
+            "titulo":"Curso WebMaster Front-End Completo",
+            "instituicao":"Danki Code",
+            "tecnologias":[2,3,5,6,8],
+            "horas":81,
+            "status":1,
+            "link":"https://drive.google.com/file/d/1dy1ZI3UpQeZ2zSkD1Cb_FPS9aHiKLVp-/view"
+        },
+        {
+            "titulo":"Java Programação Orientada a Objetos Completo",
+            "instituicao":"Nelio Alves",
+            "tecnologias":[10,11,17,28,26,27,29],
+            "status":0
+        },
+        {
+            "titulo":"Especialista Laravel",
+            "instituicao":"Treina Web",
+            "tecnologias":[4,13,14,23,17,31],
+            "status":0
+        }
+        
+    ],
+    "skills":[
+        {
+            "image":"./skills/git.svg",
+            "nome":"Git",
+            "descricao":"Git é um sistema de controle de versão distribuído amplamente utilizado na gestão de código-fonte durante o desenvolvimento de software. Criado por Linus Torvalds em 2005, Git oferece um ambiente eficiente e flexível para o rastreamento de alterações em arquivos ao longo do tempo. Ele permite que desenvolvedores trabalhem em colaboração em projetos, mantendo um histórico completo das modificações, facilitando a detecção de erros, a colaboração entre equipes e a implementação de novos recursos. Git usa um modelo distribuído, o que significa que cada cópia do repositório contém todo o histórico de revisões e pode operar independentemente, o que é essencial para colaboração e flexibilidade no desenvolvimento de software. O GitHub e o GitLab são plataformas populares que utilizam o Git para hospedar repositórios e facilitar o trabalho em equipe."
+        },
+        {
+            "image":"./skills/css.svg",
+            "nome":"CSS",
+            "descricao":"CSS, ou Cascading Style Sheets, é uma linguagem de estilo utilizada para controlar a apresentação e o layout de documentos HTML. Desenvolvido para separar a estrutura do conteúdo (HTML) da sua apresentação visual, o CSS permite que os desenvolvedores definam estilos como cores, fontes, margens e posicionamento para elementos HTML em uma página web. Com a utilização do CSS, é possível garantir consistência e facilitar a manutenção do design de um site, pois as regras de estilo podem ser aplicadas de forma centralizada, afetando todas as páginas que utilizam essas folhas de estilo. O CSS opera através de seletores que direcionam quais elementos HTML devem ser estilizados e propriedades que especificam como esses elementos devem ser apresentados. Essa separação de conteúdo e estilo contribui para a criação de páginas web mais flexíveis, acessíveis e visualmente atraentes."
+        },
+        {
+            "image":"./skills/html.svg",
+            "nome":"HTML",
+            "descricao":"HTML, que significa HyperText Markup Language (Linguagem de Marcação de Hipertexto), é a linguagem fundamental para a criação e estruturação de páginas web. Desenvolvido para descrever a semântica e a estrutura dos documentos, o HTML utiliza tags (etiquetas) para definir elementos como cabeçalhos, parágrafos, listas, imagens e links. Essas tags são aninhadas para formar a estrutura hierárquica de uma página web."
+        },
+        {
+            "image":"./skills/bootstrap.svg",
+            "nome":"Bootstrap",
+            "descricao":"Bootstrap é um framework de design front-end que facilita o desenvolvimento web responsivo e a criação rápida de interfaces de usuário atraentes. Criado pelo Twitter, o Bootstrap é construído em HTML, CSS e JavaScript, e oferece uma coleção de componentes reutilizáveis, estilos pré-definidos e um sistema de grade flexível."
+        },
+        {
+            "image":"./skills/javascript.svg",
+            "nome":"Javascript",
+            "descricao":"JavaScript é uma linguagem de programação de alto nível, interpretada e orientada a objetos, amplamente utilizada para desenvolvimento web. Criada originalmente para tornar as páginas web interativas, ela se tornou uma linguagem fundamental para o desenvolvimento front-end e, mais recentemente, também para o back-end, graças ao surgimento de ambientes como o Node.js."
+        },
+        {
+            "image":"./skills/jquery.svg",
+            "nome":"JQuery",
+            "descricao":"jQuery é uma biblioteca de JavaScript rápida, leve e rica em recursos, projetada para simplificar a manipulação do DOM (Document Object Model) e a interação com eventos em páginas web. Criada por John Resig, a jQuery fornece uma abstração eficiente para tarefas comuns em desenvolvimento web, facilitando o trabalho dos desenvolvedores."
+        },
+        {
+            "image":"./skills/materialui.svg",
+            "nome":"Material UI",
+            "descricao":"Material-UI é uma biblioteca de componentes React baseada no design system Material Design, criado pelo Google. Desenvolvida para facilitar a construção de interfaces de usuário (UI) consistentes e visualmente atraentes em aplicações React, o Material-UI oferece uma variedade de componentes pré-construídos e estilizados que seguem as diretrizes de design do Material Design."
+        },
+        {
+            "image":"./skills/reactjs.svg",
+            "nome":"React",
+            "descricao":"React é uma biblioteca de JavaScript desenvolvida pelo Facebook que simplifica a construção de interfaces de usuário interativas e eficientes. Utilizada para o desenvolvimento de aplicações web de página única (SPA), React é conhecida por sua abordagem declarativa e eficiente para a criação de componentes reutilizáveis."
+        },
+        {
+            "image":"./skills/styled.svg",
+            "nome":"Styled Component",
+            "descricao":"Styled Components é uma biblioteca popular de estilo para React que utiliza a tagged template literals (literais de template marcados) do JavaScript para criar componentes React com estilos encapsulados. Em vez de utilizar arquivos separados para estilos, o Styled Components incorpora os estilos diretamente no código JavaScript, tornando-os mais coesos e autossuficientes."
+        },
+        {
+            "image":"./skills/java.svg",
+            "nome":"Java",
+            "descricao":"Java é uma linguagem de programação de propósito geral, orientada a objetos, projetada para ser portável, eficiente e segura. Ela foi criada por James Gosling e sua equipe na Sun Microsystems (que mais tarde foi adquirida pela Oracle) na década de 1990. Java é conhecida por sua capacidade de escrever programas uma vez e executá-los em diferentes plataformas sem a necessidade de recompilação, devido à sua abordagem \"write once, run anywhere\" (WORA)."
+        },
+        {
+            "image":"./skills/primefaces.svg",
+            "nome":"Primefaces",
+            "descricao":"PrimeFaces é uma biblioteca de componentes de interface de usuário (UI) para JavaServer Faces (JSF), um framework Java para o desenvolvimento de aplicações web baseadas em componentes. O PrimeFaces fornece uma ampla variedade de componentes ricos e prontos para uso, facilitando a criação de interfaces de usuário avançadas e interativas em aplicações JSF."
+        },
+        {
+            "image":"./skills/spring.svg",
+            "nome":"Spring Boot",
+            "descricao":"Spring Boot é um projeto da plataforma Spring que simplifica radicalmente o desenvolvimento de aplicações Java. Ele fornece uma maneira rápida e fácil de criar aplicativos Java independentes, com um foco especial na simplificação da configuração e na convenção sobre configuração."
+        },
+        {
+            "image":"./skills/php.svg",
+            "nome":"PHP",
+            "descricao":"PHP (Hypertext Preprocessor) é uma linguagem de script de propósito geral, especialmente adequada para o desenvolvimento web. Criada por Rasmus Lerdorf em 1994, PHP é amplamente utilizado para a construção de páginas web dinâmicas e interativas. É uma linguagem de código aberto, interpretada do lado do servidor, frequentemente incorporada diretamente no código HTML."
+        },
+        {
+            "image":"./skills/laravel.svg",
+            "nome":"Laravel",
+            "descricao":"Laravel é um framework de desenvolvimento web em PHP, criado por Taylor Otwell, que busca facilitar e agilizar o processo de desenvolvimento de aplicações web robustas e modernas. Ele segue a arquitetura MVC (Model-View-Controller) e incorpora práticas modernas de desenvolvimento, como ORM (Object-Relational Mapping), migrações de banco de dados, controle de versão, entre outros."
+        },
+        {
+            "image":"./skills/wordpress.svg",
+            "nome":"Wordpress",
+            "descricao":"WordPress é um sistema de gerenciamento de conteúdo (CMS) de código aberto que facilita a criação e manutenção de sites, blogs e aplicações web. Desenvolvido inicialmente como uma plataforma de blogs, o WordPress evoluiu para uma ferramenta versátil usada por milhões de sites em todo o mundo. Ele é conhecido por sua facilidade de uso, extensibilidade e uma comunidade ativa de desenvolvedores e usuários."
+        },
+        {
+            "image":"./skills/python.svg",
+            "nome":"Python",
+            "descricao":"Python é uma linguagem de programação de alto nível, interpretada, orientada a objetos e de propósito geral. Criada por Guido van Rossum e lançada pela primeira vez em 1991, Python é conhecida por sua sintaxe clara e legível, o que a torna acessível para desenvolvedores iniciantes e avançados. Ela tem uma ampla gama de aplicações, desde desenvolvimento web até análise de dados, automação, inteligência artificial e muito mais."
+        },
+        {
+            "image":"./skills/nodejs.svg",
+            "nome":"Node JS",
+            "descricao":"Node.js é um ambiente de execução de JavaScript do lado do servidor construído no motor V8 da Google Chrome. Ele permite que os desenvolvedores usem JavaScript para escrever scripts do lado do servidor, proporcionando a capacidade de criar aplicações web escaláveis e de alta performance. O Node.js é amplamente utilizado para o desenvolvimento de aplicações web em tempo real, APIs (interfaces de programação de aplicações), microsserviços e outras soluções de servidor."
+        },
+        {
+            "image":"./skills/mysql.svg",
+            "nome":"MySQL",
+            "descricao":"MySQL é um sistema de gerenciamento de banco de dados relacional (RDBMS) de código aberto que utiliza a linguagem SQL (Structured Query Language) para gerenciar e manipular dados. Ele é amplamente utilizado em aplicações web para armazenamento e recuperação de dados. Desenvolvido pela MySQL AB (agora parte da Oracle Corporation), o MySQL é conhecido por sua confiabilidade, desempenho e facilidade de uso."
+        },
+        {
+            "image":"./skills/postgresql.svg",
+            "nome":"PostgreSQL",
+            "descricao":"PostgreSQL é um sistema de gerenciamento de banco de dados relacional (RDBMS) de código aberto conhecido por sua robustez, recursos avançados e conformidade com padrões SQL. Desenvolvido originalmente na Universidade da Califórnia em Berkeley, o PostgreSQL é mantido por uma comunidade de desenvolvedores e é distribuído sob a licença PostgreSQL, uma licença de software livre e de código aberto."
+        },
+        {
+            "image":"./skills/sqlserver.svg",
+            "nome":"SQL Server",
+            "descricao":"Microsoft SQL Server é um sistema de gerenciamento de banco de dados relacional (RDBMS) desenvolvido pela Microsoft. Ele é amplamente utilizado em ambientes corporativos para armazenamento, recuperação e manipulação de dados. O SQL Server oferece uma variedade de recursos, incluindo suporte a transações ACID, integração com outras tecnologias da Microsoft, ferramentas de administração e recursos avançados de business intelligence."
+        }
+    ],
+    "tecnologias":[
+        {
+            "id":1,
+            "nome":"Git",
+            "descricao":""
+        },
+        {
+            "id":2,
+            "nome":"CSS",
+            "descricao":""
+        },
+        {
+            "id":3,
+            "nome":"HTML",
+            "descricao":""
+        },
+        {
+            "id":4,
+            "nome":"Bootstrap",
+            "descricao":""
+        },
+        {
+            "id":5,
+            "nome":"Javascript",
+            "descricao":""
+        },
+        {
+            "id":6,
+            "nome":"JQuery",
+            "descricao":""
+        },
+        {
+            "id":7,
+            "nome":"Material UI",
+            "descricao":""
+        },
+        {
+            "id":8,
+            "nome":"React",
+            "descricao":""
+        },
+        {
+            "id":9,
+            "nome":"Styled Component",
+            "descricao":""
+        },
+        {
+            "id":10,
+            "nome":"Java",
+            "descricao":""
+        },
+        {
+            "id":11,
+            "nome":"Spring Boot",
+            "descricao":""
+        },
+        {
+            "id":12,
+            "nome":"Primefaces",
+            "descricao":""
+        },
+        {
+            "id":13,
+            "nome":"PHP",
+            "descricao":""
+        },
+        {
+            "id":14,
+            "nome":"Laravel",
+            "descricao":""
+        },
+        {
+            "id":15,
+            "nome":"Wordpress",
+            "descricao":""
+        },
+        {
+            "id":16,
+            "nome":"Python",
+            "descricao":""
+        },
+        {
+            "id":17,
+            "nome":"MySQL",
+            "descricao":""
+        },
+        {
+            "id":18,
+            "nome":"PostgreSQL",
+            "descricao":""
+        },
+        {
+            "id":19,
+            "nome":"SQL Server",
+            "descricao":""
+        },
+        {
+            "id":20,
+            "nome":"Node JS",   
+            "descricao":""
+        },
+        {
+            "id":21,
+            "nome":"Typescript",
+            "descricao":""
+        },
+        {
+            "id":22,
+            "nome":"Redux",
+            "descricao":""
+        },
+        {
+            "id":23,
+            "nome":"Blade",
+            "descricao":""
+        },
+        {
+            "id":24,
+            "nome":"JSF",
+            "descricao":""
+        },
+        {
+            "id":25,
+            "nome":"JSP",
+            "descricao":""
+        },
+        
+        {
+            "id":26,
+            "nome":"JPA",
+            "descricao":""
+        },
+        {
+            "id":27,
+            "nome":"Hibernate",
+            "descricao":""
+        },
+        
+        {
+            "id":28,
+            "nome":"JDBC",
+            "descricao":""
+        },
+        {
+            "id":29,
+            "nome":"Mongo DB",
+            "descricao":""
+        },
+        {
+            "id":30,
+            "nome":"Linux",
+            "descricao":""
+        },
+        {
+            "id":31,
+            "nome":"Eloquent",
+            "descricao":""
+        },
+        {
+            "id":32,
+            "nome":"Firebase",
+            "descricao":""
+        }
+    ]
+}

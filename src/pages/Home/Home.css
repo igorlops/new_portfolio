@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+.apresentacao {
+    margin: 0 auto;
+}
+
+.perfil {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.perfil .foto {
+    width: 150px;
+    margin-right: 30px;
+}
+
+.foto img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.perfil .title .name h1{
+    font-size: 72px;
+    font-family: 'Roboto';
+}
+.ola-custom {
+    font-size: 50px;
+    color: #391d8a;
+    font-weight: 500;
+}
+.texto-apresentacao{
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.contato {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contato .redes-sociais {
+    color: white;
+    background-color: #391d8a;
+    width: 250px;
+    padding: 25px;
+    border-radius: 20px;
+}
+.redes-sociais .icones {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.icones > .linkedin svg, .insta svg, .github svg {
+    width: 50px;
+}
+.contatos-ligacoes {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contatos-ligacoes > h2{
+    font-size: 40px;
+}
+
+.contatos-ligacoes > h2 > span {
+    color: #391d8a;
+}
+
+.contatos-ligacoes p a {
+    text-decoration: none;
+    color: #063ed9;
+}
+.formulario-contato{
+    width: 100%;
+}

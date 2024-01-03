@@ -1,0 +1,87 @@
+/* Placeholder */
+
+::-webkit-input-placeholder {
+    color: white;
+ }
+ 
+ :-moz-placeholder { /* Firefox 18- */
+    color: white;  
+ }
+ 
+ ::-moz-placeholder {  /* Firefox 19+ */
+    color: white;  
+ }
+ 
+ :-ms-input-placeholder {  
+    color: white;  
+ }
+
+
+
+ /* Formulario */
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 350px;
+    width: 400px;
+}
+.name-input {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+form input[type="text"]{
+    width: 48%;
+}
+form input[type="text"], input[type="email"] , textarea{
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background-color: #391d8a;
+    color: white;
+}
+
+form input[type="text"], input[type="email"], textarea:focus {
+    outline: 0;
+}
+
+input[type="submit"] {
+    padding: 10px;
+    background-color:#391d8a;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+
+input[type="submit"]:hover {
+    background-color: #5f3bca;
+}
+
+
+input[type="submit"]:active{
+    background-color: white;
+    color: #391d8a;
+    border: 1px solid #391d8a;
+}
+
+input, textarea{
+    -webkit-box-shadow: 5px 5px 16px 0px rgba(0,0,0,0.50);
+    -moz-box-shadow: 5px 5px 16px 0px rgba(0,0,0,0.50);
+    box-shadow: 5px 5px 16px 0px rgba(0,0,0,0.50);
+}
+input:hover, textarea:hover{
+    transition: .3s;
+    scale: 0.95;
+    box-shadow: none;
+    background-color: #5f3bca!important;
+}
+
+input:focus, textarea:focus{
+    scale: 0.95;
+    box-shadow: none;
+    background-color: #fff!important;
+    color: black!important;
+}

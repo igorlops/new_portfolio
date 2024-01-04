@@ -1,9 +1,9 @@
 .button-tecnologia{
     margin: 3px 5px;
+    background-color: #3634A8;
     padding: 5px;
-    background-color: white;
     border-radius: 8px;
-    color: #391d8a;
+    color: white;
     font-size: 13px;
     font-weight: 600;
     border: 1px solid #391d8a;
@@ -12,6 +12,6 @@
 .button-tecnologia:hover{
     transition: .3 s;
     transform: scale(1.1);
-    background-color: #3634A8;
+    background-color: #1d1b72;
     color: white;
 }

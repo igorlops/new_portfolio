@@ -6,6 +6,25 @@
 header{
     position: fixed;
 }
+.foto {
+    width: 150px;
+}
+.foto:hover{
+    transition: .5s;
+    scale: 1.05;
+}
+.linkedin a:hover{
+    transition: .5s;
+    color: #0e76a8!important;
+}
+.github a:hover{
+    transition: .5s;
+    color: #171515!important;
+}
+.foto img{
+    width: 100%;
+    border-radius: 50%;
+}
 
 nav ul li{
     list-style-type: none;

@@ -2,8 +2,8 @@
     text-align: center;
     font-size: 70px;
 }
-.sobre-titulo span{
-    color: #3634A8;
+.cor-alternativa{
+    color: #3634A8!important;
 }
 .texto-sobre {
     margin: 30px auto;
@@ -42,7 +42,14 @@
     border-radius: 10px;
     color: black
 }
-
+.servicos-single{
+    margin: 50px 0;
+    border-color: #3634A8!important;
+}
+.servicos-single i{
+    font-size: 50px;
+    color: #3634A8;
+}
 .curso-faculdade{
     padding: 10px 10px;
 }

@@ -1,27 +1,30 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState } from "react";
 
-const Funcao = () => {
-    const funcoes = ['Desenvolvedor Fullstack', 'Desenvolvedor de sistemas', 'Desenvolvedor web'];
-    const [funcaoSingle, setFuncaoSingle] = useState(funcoes[0]);
+const Funcao = (props) => {
+  const [text, setText] = useState("");
+  const [mostrarCursor, setMostrarCursor] = useState(false);
 
-    useEffect(() => {
-        const contadorCargo = () => {
-            let count = 0;
-            const intervalId = setInterval(() => {
-                if (count === 2) { // Modificado para 2, pois os índices do array vão de 0 a 2
-                    count = 0;
-                }
-                setFuncaoSingle(funcoes[count]);
-                count++;
-            }, 1000);
+  const escreverNaTela = (text, i = 0) => {
+    if (i < text.length) {
+      setMostrarCursor(true);
 
-            return () => clearInterval(intervalId); // Limpar o intervalo quando o componente for desmontado
-        };
+      setText(text.slice(0, i + 1));
+      setTimeout(() => escreverNaTela(text, i + 1), 200);
 
-        contadorCargo();
-    }, []); // Passando um array vazio como segundo argumento para garantir que useEffect só execute uma vez
+    } else if (i >= text.length && props?.esconderCursor) {
+      setMostrarCursor(false);
+    }
+  };
 
-    return funcaoSingle;
-};
+  useEffect(() => {
+    setTimeout(() => escreverNaTela(props.text), props?.delay ?? 300);
+  }, []);
+
+  return (
+    <span>
+      {text}
+    </span>
+  );
+}
 
 export default Funcao

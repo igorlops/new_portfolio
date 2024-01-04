@@ -12,7 +12,7 @@ function App() {
   const {theme} = useDarkMode();
   return (
       <BrowserRouter>
-        <div className="col-12 d-flex flex-row">
+        <div className="d-flex flex-row">
           <div className="col-2">
             <Header/>
             <div classname="form-check form-switch">

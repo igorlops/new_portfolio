@@ -12,28 +12,35 @@ const Sobre = () => {
   const {theme} = useDarkMode()
   return (
     <div>
-      <h2 className='sobre-titulo'>Sobre <span>mim</span></h2>
+      <h2 className='sobre-titulo'>Sobre <span className='cor-alternativa'>mim</span></h2>
       <div className="texto-sobre">
-        <p>
-        sou Igor Lopes, Desenvolvedor de Sistemas Jr, 
-        um entusiasta desenvolvedor fullstack com proeficiencia 
-        em Java e JavaScript. Minha paixão pela programação me 
-        levou a explorar as profundezas deste mundo digital. 
-        Com um compromisso constante de aperfeiçoamento, 
-        meu objetivo é conceber soluções inovadoras que 
-        impulsionem o avanço da web, 
-        tornando-a mais funcional e cativante.
-        </p>
-        Conheci a programação através da faculdade de Mecatrônica Industrial,
-          fique entusiasmado pelo fato de criar soluções com linhas de códigos
-          <p>Uma parte de ser um desenvolvedor de software é ser capaz 
-            de se manter atualizado com as tecnologias mais recentes. 
-          e à medida que a tecnologia evolui, aprendo constantemente 
-          coisas novas, expondo-me a novas ferramentas e tecnologias e
-           aumentando as minhas competências e conhecimentos.
-          </p>
+        <h4 style={{fontWeight:"bold"}} className='text-center'>Eu sou <span className='cor-alternativa'>Igor Lopes</span>, um Desenvolvedor Web Fullstack</h4>
+      <p>Já estou na área há mais de 1 ano profissionalmente, 
+        mas já escrevo código há uns 3 anos. 
+        Desenvolvo sites e sistemas para pequenas empresas.
+      </p>
+      <p>
+        Hoje eu sou Desenvolvedor Jr na Solar Magazine, no qual crio aplicações.
+        para automatizar tarefas dos setores da empresa, integração de API, criação de API e demais aplicações voltado a varejo.
+      </p>
       </div>
 
+      <h1 className='text-center' style={{fontWeight:"bold"}}>Serviços</h1>
+      <div className="d-flex justify-content-around container" >
+        <div className={`servicos-single text-center card ${theme ? "bg-dark text-white" : "bg-light"}`} style={{width:"300px"}}>
+          <i class="bi bi-laptop"></i>
+          <p>Criação de Sistema Web.</p>
+        </div>
+        <div className={`servicos-single text-center card ${theme ? "bg-dark text-white" : "bg-light"}`} style={{width:"300px"}}>
+          <i class="bi bi-file-code"></i>
+          <p>Sites e Landing Pages</p>
+        </div>
+        <div className={`servicos-single text-center card ${theme ? "bg-dark text-white" : "bg-light"}`} style={{width:"300px"}}>
+          <i class="bi bi-database"></i>
+          <p>Projetos Fullstack em geral, criação de API's e Integrações</p>
+        </div>
+      </div>
+      <p></p>
       <section className='skills bg-dark text-white mb-5'>
         <h1>Skills</h1>
         <div className="skills-icons">
@@ -44,13 +51,13 @@ const Sobre = () => {
             ))}
         </div>
 
-        <div className="skill-detalhe my-5">
+        <div className="skill-detalhe my-5" style={{maxWidth:"500px"}}>
               {skillDetail}
         </div>
       </section>
 
 
-      <section className='section-experiencias mt-5'>
+      <section className='section-experiencias mt-5 container'>
         <h2>Experiências</h2>
         <div className='experiencias'>
           <VerticalTimeline>

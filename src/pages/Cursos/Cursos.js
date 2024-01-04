@@ -11,7 +11,7 @@ const Cursos = () => {
   const {theme} = useDarkMode()
   return (
     <>
-      <h1 className='text-center' style={{fontSize:"70px"}}>Cursos <span style={{color:"#391d8a"}}>independentes</span></h1>
+      <h1 className='text-center' style={{fontSize:"70px"}}>Principais cursos <span style={{color:"#391d8a"}}>independentes</span></h1>
       <div className="mt-5 container">
       <VerticalTimeline>
         {data.cursos.map(e => (

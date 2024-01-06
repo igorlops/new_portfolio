@@ -1,6 +1,5 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './Header.css'
-import { Link, useLocation } from 'react-router-dom'
 // import { ThemeProvider } from "styled-components";
 // import { lightTheme, darkTheme } from "./Theme";
 // import GlobalTheme from "./Global";
@@ -9,8 +8,6 @@ import ReactSwitch from 'react-switch'
 import { useDarkMode } from '../hooks/useDarkMode'
 
 const Header = () => {
-    const location = useLocation();
-
     const {theme, setTheme} = useDarkMode()
 
     const toggleTheme = () => {
@@ -27,17 +24,17 @@ const Header = () => {
                 <div>
 
                     <ul className='navbar-nav'>
-                        <li className={location.pathname === '/' ? 'active' : ''}>
-                            <Link className='nav-link' to="/"><i class="bi bi-house"></i> Home</Link>
+                        <li>
+                            <a className='nav-link' href="#home"><i class="bi bi-house"></i> Home</a>
                         </li>
-                        <li className={location.pathname === '/sobre' ? 'active' : ''}>
-                            <Link className='nav-link' to="/sobre"><i class="bi bi-fingerprint"></i> Sobre</Link>
+                        <li>
+                            <a className='nav-link' href="#sobre"><i class="bi bi-fingerprint"></i> Sobre</a>
                         </li>
-                        <li className={location.pathname === '/projetos' ? 'active' : ''}>
-                            <Link className='nav-link' to="/projetos"><i class="bi bi-pc-display-horizontal"></i> Projetos</Link>
+                        <li>
+                            <a className='nav-link' href="#projetos"><i class="bi bi-pc-display-horizontal"></i> Projetos</a>
                         </li>
-                        <li className={location.pathname === '/cursos' ? 'active' : ''}>
-                            <Link className='nav-link' to="/cursos"><i class="bi bi-journal-bookmark-fill"></i> Cursos</Link>
+                        <li>
+                            <a className='nav-link' href="#cursos"><i class="bi bi-journal-bookmark-fill"></i> Cursos</a>
                         </li>
                     </ul>
                 </div>

@@ -19,12 +19,38 @@ const Projetos = () => {
     
   }
 
-  const projetos = (type, tecnologia = null) => {
+  const projetos = (type, tecnologia = null,titulo) => {
+    console.log("Tipo: "+type)
     console.log(tecnologia)
-    return data.projetos.map((projeto) => (
-      projeto.type === type ? (
-        tecnologia != null ? (
-          projeto.tecnologias.includes(tecnologia) ? (
+    return (
+    <div>
+      <h3 className='my-5'>{titulo}</h3>
+      <div className="projetos-cards mt-5 container">
+      {data.projetos.map((projeto) => (
+        projeto.type === type ? (
+          tecnologia != null ? (
+            projeto.tecnologias.includes(tecnologia) ? (
+              <div key={projeto.id} className={`card mb-5 ${!theme ? "bg-dark text-white" : "bg-dark text-light border-light"} projeto-card-single`} style={{ width: "300px" }}>
+                {projeto.image !== "" ? <img src="..." className="card-img-top" alt={projeto.title} /> : ""}
+                <div className="card-body">
+                  <h4 className="card-title">{projeto.title}</h4>
+                  <p>{projeto.descricao}</p>
+                </div>
+                <hr />
+                <div className="tecnologias-projeto">
+                  {projeto.tecnologias.map((tecnologia) => (
+                    <span key={tecnologia} className="tecnologia-single-in-project">
+                      {buttonTecnologia({ text: buscaTecnologia(tecnologia) })}
+                    </span>
+                  ))}
+                </div>
+                <div className="card-footer d-flex justify-content-between">
+                  <a href={projeto.link_repositorio} target='_blank' className={`btn btn-outline-secondary text-white`}><i className="bi bi-code-slash"></i> Source</a>
+                  <a href={projeto.link_online} target='_blank' className={`btn btn-custom-link text-white`}><i className="bi bi-globe"></i> Online</a>
+                </div>
+              </div>
+            ) : null
+          ) : (
             <div key={projeto.id} className={`card mb-5 ${!theme ? "bg-dark text-white" : "bg-dark text-light border-light"} projeto-card-single`} style={{ width: "300px" }}>
               {projeto.image !== "" ? <img src="..." className="card-img-top" alt={projeto.title} /> : ""}
               <div className="card-body">
@@ -44,30 +70,12 @@ const Projetos = () => {
                 <a href={projeto.link_online} target='_blank' className={`btn btn-custom-link text-white`}><i className="bi bi-globe"></i> Online</a>
               </div>
             </div>
-          ) : null
-        ) : (
-          <div key={projeto.id} className={`card mb-5 ${!theme ? "bg-dark text-white" : "bg-dark text-light border-light"} projeto-card-single`} style={{ width: "300px" }}>
-            {projeto.image !== "" ? <img src="..." className="card-img-top" alt={projeto.title} /> : ""}
-            <div className="card-body">
-              <h4 className="card-title">{projeto.title}</h4>
-              <p>{projeto.descricao}</p>
-            </div>
-            <hr />
-            <div className="tecnologias-projeto">
-              {projeto.tecnologias.map((tecnologia) => (
-                <span key={tecnologia} className="tecnologia-single-in-project">
-                  {buttonTecnologia({ text: buscaTecnologia(tecnologia) })}
-                </span>
-              ))}
-            </div>
-            <div className="card-footer d-flex justify-content-between">
-              <a href={projeto.link_repositorio} target='_blank' className={`btn btn-outline-secondary text-white`}><i className="bi bi-code-slash"></i> Source</a>
-              <a href={projeto.link_online} target='_blank' className={`btn btn-custom-link text-white`}><i className="bi bi-globe"></i> Online</a>
-            </div>
-          </div>
-        )
-      ) : null
-    ));
+          )
+        ) : null
+      ))}
+      </div>
+      </div>
+    );
   }
 
   return (
@@ -88,70 +96,39 @@ const Projetos = () => {
           ))}
 
           {tecnologiaProjeto == 0 ? (
-            <>
-            {projetos(1) ?
               <>
-              <h3 className='my-5'>Projetos de estudo</h3>
-              <div className="projetos-cards mt-5 container">
-                {projetos(1)}
-              </div>
+                {projetos(1,null,"Projetos de estudo")}
+                {projetos(2,null,"Sites freelencers")}
+                {projetos(3,null,"Sistemas Freelancer ")}
+                {projetos(4,null,"Sistemas corporativos")}
               </>
-              :
-              <span></span>
-            }
-              <h3 className='mt-3'>Sites freelencers</h3>
-              <div className="projetos-cards mt-5 container">
-                {projetos(2)}
-              </div>
-              <h3 className='my-5'>Sistemas Freelancer </h3>
-              <div className="projetos-cards mt-5 container">
-                {projetos(3)}
-              </div>
-              <h3>Sistemas corporativos</h3>
-              <div className="projetos-cards mt-5 container">
-                {projetos(4)}
-              </div>
-            </>
-          ) : (
-            <>
-                {projetos(1,tecnologiaProjeto) &&
-                <>
-                  <h3 className='mt-5 mb-2'>Projetos de estudo</h3>
-                  <div className="projetos-cards mt-5 container">
-                    {projetos(1,tecnologiaProjeto)}
-                  </div>
-                </>
-                }
-                {projetos(2,tecnologiaProjeto) &&
-                <>
-                  <h3 className='my-2'>Sites freelencers</h3>
-                  <div className="projetos-cards mt-5 container">
-                    {projetos(2,tecnologiaProjeto)}
-                  </div>
-                </>
-                }
-                {projetos(3,tecnologiaProjeto) &&
-                <>
-                  <h3 className='my-2'>Sistemas Freelancer </h3>
-                  <div className="projetos-cards mt-5 container">
-                    {projetos(3,tecnologiaProjeto)}
-                  </div>
-                </>
-                }
-                {projetos(4,tecnologiaProjeto) &&
-                <>
-                  <h3 className='my-2'>Sistemas corporativos</h3>
-                  <div className="projetos-cards mt-5 container">
-                    {projetos(4,tecnologiaProjeto)}
-                  </div>
-                </>
-                }
-            </>
-          )
-        }
+            ) : (
+              <>
+              {projetos(1,tecnologiaProjeto,"Projetos de estudo") &&
+              <>
+                {projetos(1,tecnologiaProjeto,"Projetos de estudo")}
+              </>
+              }
+              {projetos(2,tecnologiaProjeto,"Sites freelencers") &&
+              <>
+                {projetos(2,tecnologiaProjeto,"Sites freelencers")}
+              </>
+              }
+              {projetos(3,tecnologiaProjeto,"Sistemas Freelancer ") &&
+              <>
+              {projetos(3,tecnologiaProjeto,"Sistemas Freelancer ")}
+              </>
+              }
+              {projetos(4,tecnologiaProjeto,"Sistemas corporativos") &&
+              <>
+                {projetos(4,tecnologiaProjeto,"Sistemas corporativos")}
+              </>
+              }
+              </>
+            )}
 
         <a href='https://github.com/igorlops?tab=repositories' className='btn btn-primary'>Ver mais</a>
-      </div>
+    </div>
   )
 }
 

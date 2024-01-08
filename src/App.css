@@ -1,3 +1,31 @@
 #appContent {
     overflow: auto;    
 }
+
+
+#header_mobile_app{ 
+ display: none;
+}
+
+
+@media screen and (max-width:1100px)
+{
+    #App {
+        flex-direction: column!important;
+    }
+
+    #header_app {
+        width: 100%!important;
+    }
+
+    #appContent {
+        width: 100%!important;
+    }
+}
+
+@media screen and (max-width:500px)
+{
+    h1,h2{
+        font-size: 40px!important;
+    }
+}

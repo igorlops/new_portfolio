@@ -5,13 +5,13 @@ import Funcao from '../../components/Funcao'
 const Home = () => {
 
   return (
-    <div style={{height:"95vh"}} className='col-12 container d-flex justify-content-center text-center align-items-center'>
+    <div style={{height:"100vh", overflow:"hidden"}} className='col-12 container d-flex justify-content-center text-center align-items-center'>
       <div className="image-overlay"></div>
       <img
         src="./skills/programmer.jpg"
         alt="Programador"
         style={{
-          height: "100vh",
+          height: "107vh",
           width: "100%",
           backgroundImage: "url('./skills/programmer.jpg')",
           backgroundSize: "cover",

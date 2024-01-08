@@ -31,9 +31,12 @@
     margin: 0 auto;
     max-width: 600px;
 }
+.cargo h2{
+    font-size: 20px!important;
+}
 .cargo span.cursor-blink{
     animation: blink 1s infinite; /* Certifique-se de que o span ocupe apenas o espaço necessário */
-    color: #000; /* Cor do cursor */
+    color: #fff; /* Cor do cursor */
   }
 @keyframes blink {
     0%, 50%, 100% {

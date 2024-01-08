@@ -10,13 +10,9 @@ import { useDarkMode } from './hooks/useDarkMode';
 function App() {
   const {theme} = useDarkMode();
   return (
-        <div className="d-flex flex-row">
-          <div className="col-2">
+        <div className="d-flex flex-row" id='App'>
+          <div className="col-2" id='header_app'>
             <Header/>
-            <div classname="form-check form-switch">
-                <input classname="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked"/>
-                <label classname="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox input</label>
-            </div>
           </div>
           <div className={`col-10 pt-5 `} id='appContent'>
 

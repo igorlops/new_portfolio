@@ -11,7 +11,7 @@ const Sobre = () => {
   const [skillDetail, setSkillDetail] = useState("")
   const {theme} = useDarkMode()
   return (
-    <div>
+    <div className='container'>
       <h2 className='sobre-titulo'>Sobre <span className='cor-alternativa'>mim</span></h2>
       <div className="texto-sobre">
         <h4 style={{fontWeight:"bold"}} className='text-center'>Eu sou <span className='cor-alternativa'>Igor Lopes</span>, um Desenvolvedor Web Fullstack</h4>
@@ -26,16 +26,16 @@ const Sobre = () => {
       </div>
 
       <h1 className='text-center' style={{fontWeight:"bold"}}>Serviços</h1>
-      <div className="d-flex justify-content-around container" >
-        <div className={`servicos-single text-center card ${theme ? "bg-dark text-white" : "bg-light"}`} style={{width:"300px"}}>
+      <div className="d-flex justify-content-around container flex-wrap" >
+        <div className={`servicos-single text-center card ${!theme ? "bg-dark text-white" : "bg-light"}`} style={{width:"300px"}}>
           <i class="bi bi-laptop"></i>
           <p>Criação de Sistema Web.</p>
         </div>
-        <div className={`servicos-single text-center card ${theme ? "bg-dark text-white" : "bg-light"}`} style={{width:"300px"}}>
+        <div className={`servicos-single text-center card ${!theme ? "bg-dark text-white" : "bg-light"}`} style={{width:"300px"}}>
           <i class="bi bi-file-code"></i>
           <p>Sites e Landing Pages</p>
         </div>
-        <div className={`servicos-single text-center card ${theme ? "bg-dark text-white" : "bg-light"}`} style={{width:"300px"}}>
+        <div className={`servicos-single text-center card ${!theme ? "bg-dark text-white" : "bg-light"}`} style={{width:"300px"}}>
           <i class="bi bi-database"></i>
           <p>Projetos Fullstack em geral, criação de API's e Integrações</p>
         </div>
@@ -57,18 +57,20 @@ const Sobre = () => {
       </section>
 
 
-      <section className='section-experiencias mt-5 container'>
+      <section className='section-experiencias mt-5 container d-flex justify-content-center bg'>
         <h2>Experiências</h2>
         <div className='experiencias'>
-          <VerticalTimeline>
+          <VerticalTimeline
+            lineColor={theme ? "#212529" : "#fff"}
+            className='w-100'
+          >
         {data.experiencias.map((e) => (
           
             <VerticalTimelineElement
-              lineColor="#000"
-              className="vertical-timeline-element--work"
-              contentStyle={{ background: !theme ? "#212529" : "#fff", color: theme ? "#212529" : "#fff" }}
-              contentArrowStyle={{ borderRight: `7px solid  ${!theme ? "#212529" : "#fff"}` }}
-              iconStyle={{ background: !theme ? "#212529" : "#fff", color: theme ? "#212529" : "#fff", border: !theme ? "#212529" : "#fff"}}
+              className="vertical-timeline-element--work w-100"
+              contentStyle={{ background: !theme ? "#343a40" : "#fff", color: theme ? "#343a40" : "#fff" }}
+              contentArrowStyle={{ borderRight: `7px solid  ${!theme ? "#343a40" : "#fff"}` }}
+              iconStyle={{ background: !theme ? "#343a40" : "#fff", color: theme ? "#343a40" : "#fff", border: !theme ? "#343a40" : "#fff"}}
               date={e.data}
             >
               <h3 className="vertical-timeline-element-title">
@@ -78,10 +80,10 @@ const Sobre = () => {
               <h6 className="vertical-timeline-element-subtitle">{e.empresa}</h6> <span>{e.data}</span>
               </div>
               <div className="descricao-experiencia">
-                <p>{e.descricao}</p>
-                <ul>
+                <p style={{textTransform:"uppercase"}}>{e.descricao}</p>
+                <ul className='w-100 d-flex justify-content-center flex-column align-items-center p-0 mt-2' style={{textAlign:"left"}}>
                   {e.atividades.map((e,i) => (
-                    <li key={i} style={{listStyleType:"none",textAlign:"left"}}>
+                    <li key={i} style={{listStyleType:"none"}}>
                       {e}
                     </li>
                   ))}

@@ -18,18 +18,18 @@ const Cursos = () => {
             <VerticalTimelineElement
             lineColor="#000"
             className="vertical-timeline-element--work"
-            contentStyle={{ background: !theme ? "#212529" : "#fff", color: theme ? "#212529" : "#fff" }}
-            contentArrowStyle={{ borderRight: `7px solid  ${!theme ? "#212529" : "#fff"}` }}
-            iconStyle={{ background: !theme ? "#212529" : "#fff", color: theme ? "#212529" : "#fff", border: !theme ? "#212529" : "#fff"}}
+            contentStyle={{ background: !theme ? "#343a40" : "#fff", color: theme ? "#343a40" : "#fff" }}
+            contentArrowStyle={{ borderRight: `7px solid  ${!theme ? "#343a40" : "#fff"}` }}
+            iconStyle={{ background: !theme ? "#343a40" : "#fff", color: theme ? "#343a40" : "#fff", border: !theme ? "#343a40" : "#fff"}}
           >
-            <div className="d-flex align-items-center mb-3 justify-content-between">
-              <span class="badge rounded-pill text-bg-secondary">{e.instituicao}</span>
+            <div className="d-flex align-items-center mb-3 justify-content-between flex-wrap">
+              <span class="badge rounded-pill text-bg-secondary mb-2">{e.instituicao}</span>
                 {e.status == 1 ? (
-                  <span class="badge rounded-pill text-bg-primary">
+                  <span class="badge rounded-pill text-bg-primary mb-2">
                     {e.horas} horas 
                   </span>
                   ) : (
-                    <span class="badge rounded-pill text-bg-warning">
+                    <span class="badge rounded-pill text-bg-warning mb-2">
                       Em andamento
                     </span>
                   )}

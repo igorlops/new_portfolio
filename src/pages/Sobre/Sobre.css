@@ -155,3 +155,25 @@ section.skills h1{
     flex-wrap: wrap;
     justify-content: space-around;
 }
+
+@media screen and (max-width: 500px)
+{
+
+    .vertical-timeline-element--work {
+        max-width: 100%;
+        padding: 0;
+        text-align: left;
+    }
+    
+    .vertical-timeline-element-title {
+        font-size: 15px;
+    }
+    .vertical-timeline-element-subtitle, .empresa-data > span{
+        font-size: 12px;
+    }
+    .descricao-experiencia {
+       width: 100%;
+       text-align: left;
+    }
+    
+}

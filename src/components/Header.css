@@ -5,6 +5,7 @@
 }
 header{
     position: fixed;
+    
 }
 .foto {
     width: 150px;
@@ -26,14 +27,14 @@ header{
     border-radius: 50%;
 }
 
-nav ul li{
+nav#menu-desktop ul li{
     list-style-type: none;
 }
-nav ul li a{
+nav#menu-desktop ul li a{
     text-decoration: none;
     color: #fff;
 }
-nav ul li:hover{
+nav#menu-desktop ul li:hover{
     background-color: rgb(66, 3, 124);
     color: white;
     border-radius:15px;
@@ -46,4 +47,23 @@ nav ul li:hover{
     text-align: center;
     border-radius: 15px;
     padding: 0 20px;
+}
+#menu-mobile {
+    display: none;
+}
+@media screen and (max-width:1100px) {
+    .foto {
+        width: 70px!important;
+    }
+    #header {
+        height: 100%!important;
+        width: 100%;
+        position: relative;
+    }
+    #menu-desktop {
+        display: none!important;
+    }
+    #menu-mobile {
+        display: block;
+    }
 }

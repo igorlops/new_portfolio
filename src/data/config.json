@@ -99,7 +99,7 @@
             "type":1,
             "title":"Projeto ReactGram",
             "descricao":"Projeto de um clone do Instagram Fullstack em Javascript. Criação da API com Node e Express e Mongo DB para banco de dados. No Frontend usei React e Redux.",
-            "tecnologias":[2,3,5,8,20,22],
+            "tecnologias":[2,3,5,8,20,22,29],
             "link_repositorio":"https://github.com/igorlops/reactgram/",
             "link_online":""
         },
@@ -153,45 +153,45 @@
             "type":2,
             "title":"GOBCE",
             "descricao":"Site da Maçonaria do Ceará, com blog de últimas notícias",
-            "tecnologias":[2,3,5,13,15],
-            "link_repositorio":"https://gobce.org.br/",
-            "link_online":""
+            "tecnologias":[2,3,5,13,15,17],
+            "link_repositorio":"",
+            "link_online":"https://gobce.org.br/"
         },
         {
             "image":"",
             "type":2,
             "title":"Prolub",
             "descricao":"Site de lubrificantes automotivos estilo catálogo de produtos",
-            "tecnologias":[2,3,5,13,15],
-            "link_repositorio":"https://prolub.ind.br/",
-            "link_online":""
+            "tecnologias":[2,3,5,13,15,17],
+            "link_repositorio":"",
+            "link_online":"https://prolub.ind.br/"
         },
         {
             "image":"",
             "type":2,
             "title":"FDS Construções e Equipamentos",
             "descricao":"Site da empresa FDS construções e equipamentos. Empresa responsável por construir academia ao ar livre",
-            "tecnologias":[2,3,5,13,15],
-            "link_repositorio":"https://fdsengenharia.com/",
-            "link_online":""
+            "tecnologias":[2,3,5,13,15,17],
+            "link_repositorio":"",
+            "link_online":"https://fdsengenharia.com/"
         },
         {
             "image":"",
             "type":2,
             "title":"ProRequinte",
             "descricao":"Site de empresa de móveis planejados referência em sua área",
-            "tecnologias":[2,3,5,13,15],
-            "link_repositorio":"https://prorequinte.com/",
-            "link_online":""
+            "tecnologias":[2,3,5,13,15,17],
+            "link_repositorio":"",
+            "link_online":"https://prorequinte.com/"
         },
         {
             "image":"",
             "type":2,
             "title":"Landing Page parceiro MOB",
             "descricao":"Landing Page criada para parceiro MOB Telecom.",
-            "tecnologias":[2,3,5,13,15],
-            "link_repositorio":"https://superfibranet.com.br/",
-            "link_online":""
+            "tecnologias":[2,3,5,13,15,17],
+            "link_repositorio":"",
+            "link_online":"https://superfibranet.com.br/"
         },
         {
             "image":"",
@@ -214,8 +214,8 @@
         {
             "image":"",
             "type":4,
-            "title":"Auxiliar de fechamento de caixa",
-            "descricao":"A aplicação é acionada assim que o fechamento de caixa ocorre (gatilho na criação de novo registro de fechamento), criando uma pendência no aplicativo com o fechamento esperando arquivos para a conferência de financeiro",
+            "title":"Cadastro e Conferência de fechamento de caixa",
+            "descricao":"A aplicação é acionada assim que o fechamento de caixa ocorre (gatilho na criação de novo registro de fechamento), criando uma pendência no aplicativo com o fechamento esperando cadastro de arquivos, e o setor financeiro pode validar",
             "tecnologias":[2,3,5,6,19],
             "link_repositorio":"",
             "link_online":""
@@ -223,12 +223,40 @@
         {
             "image":"",
             "type":4,
-            "title":"API Integração",
-            "descricao":"API de Integração do E-Commerce da empresa com API da Linx, utlizando Python",
-            "tecnologias":[16,19],
+            "title":"API Integração E-commerce LINX",
+            "descricao":"API de Integração de E-Commerce empresa da Linx, utlizando Python, e painel de controle interno feito com JQuery",
+            "tecnologias":[2,3,4,5,6,16,19],
+            "link_repositorio":"",
+            "link_online":""
+        },
+        {
+            "image":"",
+            "type":4,
+            "title":"Dashboard de acompanhamento de metas",
+            "descricao":"Dashboard onde é possível acompanhar as metas estabelecidas por cada adquirente escolhida.",
+            "tecnologias":[2,3,4,5,6,19],
+            "link_repositorio":"",
+            "link_online":""
+        },
+        {
+            "image":"",
+            "type":4,
+            "title":"Conferência de despesas das lojas",
+            "descricao":"Aplicação para Conferência do setor Financeiro para acompanhar as despesas da loja, com opções de aprovar, reprovar e visualizar detalhes de cada comprovante de despesa.",
+            "tecnologias":[2,3,4,5,6,19],
+            "link_repositorio":"",
+            "link_online":""
+        },
+        {
+            "image":"",
+            "type":4,
+            "title":"Sistema Java Web",
+            "descricao":"Manutenção de Sistema Web quando atuei como estagiário na SCIO Tech, um sistema de URA's, utilizando Java Servlets",
+            "tecnologias":[2,3,4,5,6,10,11,12,24,28,18],
             "link_repositorio":"",
             "link_online":""
         }
+        
     ],
     "cursos":[
         {

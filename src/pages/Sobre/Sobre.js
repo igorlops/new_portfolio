@@ -83,7 +83,8 @@ const Sobre = () => {
                 <p style={{textTransform:"uppercase"}}>{e.descricao}</p>
                 <ul className='w-100 d-flex justify-content-center flex-column align-items-center p-0 mt-2' style={{textAlign:"left"}}>
                   {e.atividades.map((e,i) => (
-                    <li key={i} style={{listStyleType:"none"}}>
+                    <li key={i} style={{listStyleType:"none"
+                  }}>
                       {e}
                     </li>
                   ))}

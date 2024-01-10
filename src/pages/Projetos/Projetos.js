@@ -45,8 +45,17 @@ const Projetos = () => {
                   ))}
                 </div>
                 <div className="card-footer d-flex justify-content-between">
-                  <a href={projeto.link_repositorio} target='_blank' className={`btn btn-outline-secondary text-white`}><i className="bi bi-code-slash"></i> Source</a>
-                  <a href={projeto.link_online} target='_blank' className={`btn btn-custom-link text-white`}><i className="bi bi-globe"></i> Online</a>
+                {projeto.link_repositorio != "" &&                 
+                    <a href={projeto.link_repositorio} target='_blank' className={`btn btn-outline-secondary text-white`}>
+                      <i className="bi bi-code-slash"></i> 
+                      Source
+                    </a> 
+                  }
+                  {projeto.link_online !== "" &&
+                    <a href={projeto.link_online} target='_blank' className={`btn btn-custom-link text-white`}>
+                      <i className="bi bi-globe"></i> Online
+                    </a>
+                  }
                 </div>
               </div>
             ) : null
@@ -66,8 +75,18 @@ const Projetos = () => {
                 ))}
               </div>
               <div className="card-footer d-flex justify-content-between">
-                <a href={projeto.link_repositorio} target='_blank' className={`btn btn-outline-secondary text-white`}><i className="bi bi-code-slash"></i> Source</a>
-                <a href={projeto.link_online} target='_blank' className={`btn btn-custom-link text-white`}><i className="bi bi-globe"></i> Online</a>
+                  {projeto.link_repositorio != "" &&                 
+                    <a href={projeto.link_repositorio} target='_blank' className={`btn btn-outline-secondary text-white`}>
+                      <i className="bi bi-code-slash"></i> 
+                      Source
+                    </a> 
+                  }
+                  {projeto.link_online !== "" &&
+                    <a href={projeto.link_online} target='_blank' className={`btn btn-custom-link text-white`}>
+                      <i className="bi bi-globe"></i> 
+                      Online
+                    </a>
+                  }
               </div>
             </div>
           )

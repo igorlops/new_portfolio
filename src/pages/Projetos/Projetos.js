@@ -1,11 +1,13 @@
-import React, { useState } from 'react'
+/* global bootstrap */
+
+import React, { useState,useRef, useEffect } from 'react'
 import './Projetos.css'
 import data from '../../data/config.json'
 import buscaTecnologia from '../../components/BuscaTecnologia'
+
 import buttonTecnologia from '../../components/ButtonTecnologia/ButtonTecnologia'
 import { useDarkMode } from '../../hooks/useDarkMode'
-
-
+import ModalDetalhe from '../../components/Modal/Modal'
 
 const Projetos = () => {
 
@@ -23,18 +25,27 @@ const Projetos = () => {
     console.log("Tipo: "+type)
     console.log(tecnologia)
     return (
+      <>
     <div>
       <h3 className='my-5'>{titulo}</h3>
       <div className="projetos-cards mt-5 container">
-      {data.projetos.map((projeto) => (
+      {data.projetos.map((projeto,i) => (
+              
         projeto.type === type ? (
           tecnologia != null ? (
             projeto.tecnologias.includes(tecnologia) ? (
-              <div key={projeto.id} className={`card mb-5 ${!theme ? "bg-dark text-white" : "bg-dark text-light border-light"} projeto-card-single`} style={{ width: "300px" }}>
+              <>
+                    <ModalDetalhe
+                id={`detalhe_projeto${i}`}
+                text={projeto.descricao}
+                title={projeto.title}
+                link_online={projeto.link_online}
+                link_repositorio={projeto.link_repositorio}
+              />
+              <div key={`projeto${i}`} className={`card mb-5 ${!theme ? "bg-dark text-white" : "bg-dark text-light border-light"} projeto-card-single`} style={{ width: "300px" }}>
                 {projeto.image !== "" ? <img src="..." className="card-img-top" alt={projeto.title} /> : ""}
                 <div className="card-body">
                   <h4 className="card-title">{projeto.title}</h4>
-                  <p>{projeto.descricao}</p>
                 </div>
                 <hr />
                 <div className="tecnologias-projeto">
@@ -44,27 +55,25 @@ const Projetos = () => {
                     </span>
                   ))}
                 </div>
-                <div className="card-footer d-flex justify-content-between">
-                {projeto.link_repositorio != "" &&                 
-                    <a href={projeto.link_repositorio} target='_blank' className={`btn btn-outline-secondary text-white`}>
-                      <i className="bi bi-code-slash"></i> 
-                      Source
-                    </a> 
-                  }
-                  {projeto.link_online !== "" &&
-                    <a href={projeto.link_online} target='_blank' className={`btn btn-custom-link text-white`}>
-                      <i className="bi bi-globe"></i> Online
-                    </a>
-                  }
+                <div className="card-footer d-flex justify-content-center">
+                  <button className='btn btn-detail-project my-2' data-bs-toggle="modal" data-bs-target={`#detalhe_projeto${i}`}>Detalhes</button>
                 </div>
               </div>
+              </>
             ) : null
           ) : (
+            <>
+            <ModalDetalhe
+              id={`detalhe_projeto${i}`}
+              text={projeto.descricao}
+              title={projeto.title}
+              link_online={projeto.link_online}
+              link_repositorio={projeto.link_repositorio}
+              />
             <div key={projeto.id} className={`card mb-5 ${!theme ? "bg-dark text-white" : "bg-dark text-light border-light"} projeto-card-single`} style={{ width: "300px" }}>
               {projeto.image !== "" ? <img src="..." className="card-img-top" alt={projeto.title} /> : ""}
               <div className="card-body">
                 <h4 className="card-title">{projeto.title}</h4>
-                <p>{projeto.descricao}</p>
               </div>
               <hr />
               <div className="tecnologias-projeto">
@@ -74,28 +83,23 @@ const Projetos = () => {
                   </span>
                 ))}
               </div>
-              <div className="card-footer d-flex justify-content-between">
-                  {projeto.link_repositorio != "" &&                 
-                    <a href={projeto.link_repositorio} target='_blank' className={`btn btn-outline-secondary text-white`}>
-                      <i className="bi bi-code-slash"></i> 
-                      Source
-                    </a> 
-                  }
-                  {projeto.link_online !== "" &&
-                    <a href={projeto.link_online} target='_blank' className={`btn btn-custom-link text-white`}>
-                      <i className="bi bi-globe"></i> 
-                      Online
-                    </a>
-                  }
+              
+              <div className="card-footer d-flex justify-content-center"> 
+                <button className='btn btn-detail-project my-2' data-bs-toggle="modal" data-bs-target={`#detalhe_projeto${i}`}>Detalhes</button>
               </div>
             </div>
+          </>
           )
         ) : null
       ))}
       </div>
       </div>
+      </>
     );
   }
+
+
+  const modalRef = useRef(null);
 
   return (
     <div className='section-projetos py-5'>

@@ -101,3 +101,18 @@
     background-color: #391d8a;
     color: #fff;
 }
+
+.btn-detail-project{
+    background-color: transparent;
+    border: 1px solid #4d2ea8;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+.btn-detail-project:hover{
+    background-color: #391d8a;
+    color: #fff;
+}
